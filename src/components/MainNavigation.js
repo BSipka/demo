@@ -28,6 +28,16 @@ function MainNavigation() {
               Contact
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => {
+                return isActive ? classes.active : undefined;
+              }}
+              to="/login"
+            >
+              Login
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
